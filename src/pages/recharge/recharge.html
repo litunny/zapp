@@ -1,0 +1,99 @@
+<!--
+  Generated template for the RechargePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color ="primary">
+    <ion-title>Mobile Recharge</ion-title>
+    <ion-buttons start>
+      <button style="background-color: #0164AB; width: 40px;" ion-button icon-left>
+       <p>&#8358;&nbsp;0</p>
+      </button>
+    </ion-buttons>
+
+    <ion-buttons end>
+      <button ion-button  icon-only>
+        <ion-icon name="add-circle"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+<ion-content>
+    <ion-grid>
+        <ion-row>
+          <ion-col col-3>
+                   <p style="margin: 0px; padding: 0px; margin-left: 15px; color:#0077c0; "><b>ME</b></p>
+                   <button outline ion-fab mini  style="background: none; border: 1px solid #0077c0;">
+                        <ion-icon name="person" style="font-size: 17px; color: #0077c0;"></ion-icon>
+                   </button>
+          </ion-col>
+          <ion-col col-3>
+                  <p style="margin: 0px; padding: 0px; margin-left: 12px; color: #B0BDB7;"><b>NEW</b></p>
+                   <button outline ion-fab mini>
+                        <ion-icon name="add" style="font-size: 17px;"></ion-icon>
+                   </button>
+          </ion-col>
+        </ion-row>
+    </ion-grid>
+    <ion-card>
+          <ion-list>
+            <button ion-item style="color: #546A79; font-size: 20px;">
+              <ion-icon name="call"></ion-icon>
+                &nbsp;&nbsp;+23456789999
+            </button>
+            <ion-row>
+              <ion-col col-7 style="height: 40px;">
+                  <button ion-item style="color: #546A79; font-size: 20px;">
+                    <ion-icon name="phone-portrait"></ion-icon>
+                        &nbsp;&nbsp;Etisalat
+                  </button>
+              </ion-col>
+              <ion-col col-5 style="height: 40px;">
+                    <ion-label style="color: #0077c0; font-size: 18px;"><b>CHANGE</b></ion-label>
+                    <ion-select>
+                        <ion-option value="n64">MTN</ion-option>
+                        <ion-option value="ps">Glo</ion-option>
+                        <ion-option value="genesis">Airtel</ion-option>
+                        <ion-option value="saturn">Visafone</ion-option>
+                    </ion-select>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col col-6 padding>
+                    <button ion-button block>AIRTIME</button>                    
+                </ion-col>
+                <ion-col col-6 padding>
+                    <button ion-button block outline>DATA</button>
+                </ion-col>
+            </ion-row>
+             
+            <ion-item>
+               <ion-input type="text" value="" placeholder="Enter Amount"></ion-input>
+            </ion-item>
+            <ion-row style="background-color: #EAF5FD;">
+                <ion-col col-2 text-center style="height: 30px; margin-top: 30px;">
+                     <img src="assets/images/offer.png" />
+                </ion-col>
+                <ion-col col-10 >
+                  <ion-card-content >
+                      <p style="color: #576572;"><b>Special upgrade 200% cashback.</b></p>
+                      Get 200% cashback up to N500 on first recharge or bill payment. Valid for
+                      next 24 hours only!
+                  </ion-card-content>
+                </ion-col>
+            </ion-row>
+          </ion-list>
+          
+    </ion-card>
+    <div padding>
+       <button (click)="Pay()" style="background-color: #FFBFAF;" ion-button block>PROCEED</button>
+    </div>
+    <button ion-item style="color: #0077c0;">
+        <ion-icon name="help-circle" item-start></ion-icon>
+          How to use MeeApp?
+    </button>
+</ion-content>

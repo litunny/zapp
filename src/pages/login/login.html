@@ -1,0 +1,47 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<!--ion-header>
+
+  <ion-navbar>
+    <ion-title>Login</ion-title>
+  </ion-navbar>
+
+</ion-header-->
+<ion-content padding class="page-login">
+      <ion-grid style="margin-top: 60px;">
+            <ion-row>
+              <ion-col col-2>
+              </ion-col>
+              <ion-col col-8>
+                  <img src="assets/images/logo.png">
+              </ion-col>
+              <ion-col col-2>
+              </ion-col>
+            </ion-row>
+      </ion-grid>
+      <ion-list style="color: #fff; margin-top: 30px;">
+          <ion-item style="background: transparent; color: #fff;">
+             <ion-icon name="ios-person-outline" item-left></ion-icon>
+            <ion-input type="text" placeholder=" Phone Number"></ion-input>
+          </ion-item>
+          <ion-item style="background: transparent; color: #fff;">
+            <ion-icon name="ios-lock-outline" item-left></ion-icon>
+            <ion-input type="password" placeholder="Password"></ion-input>
+          </ion-item>
+      </ion-list>
+      
+          <ion-row>
+            <ion-col col-12>
+               <button (click)="Login()" ion-button icon-only block color="light"><ion-icon name="ios-log-in-outline" color="primary"></ion-icon></button>
+            </ion-col>
+         </ion-row>
+            <ion-row>
+               <ion-col col-12>
+                    <button ion-button icon-only block style="background-color: #0164AB;">Sign Up</button>
+              </ion-col>
+            </ion-row>
+</ion-content>
